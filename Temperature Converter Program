@@ -24,7 +24,7 @@ public class TemperatureConverter {
 
   System.out.print("Select Conversion: ");
   int choice = scan.nextInt();
-    if (choice == 1 ) //Processfor Fahrenheit to Celsius conversion 
+    if (choice == 1 ) //Process for Fahrenheit to Celsius conversion 
     {
     	System.out.print("Enter Temperature in Fahrenheit: ");
         double fahrenheit = scan.nextDouble();
