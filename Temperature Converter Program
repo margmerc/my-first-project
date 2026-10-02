@@ -1,0 +1,49 @@
+/*
+* Author: Margarita Mercado Course: 1250C 
+* Date: October 1, 2026
+* In Class assignment 
+* Temperature Conversion Program
+*
+* Temp Conversion Formulas
+*   Fahrenheit to Celcius: C = F - 32 x 5/9
+*   Celcius to Fahrenheit: F = C x 9/5 + 32
+*/
+
+
+import java.util.Scanner;
+
+public class TemperatureConverter {
+  
+	public static void main (String[] args) {
+  Scanner scan = new Scanner (System.in);
+
+  System.out.println("Temperature Conversion Program");
+  System.out.println("------------------------------");
+  System.out.println("1. Fahrenheit to Celsius ");
+  System.out.println("2. Celsius to Fahrenheit ");
+
+  System.out.print("Select Conversion: ");
+  int choice = scan.nextInt();
+    if (choice == 1 ) //Processfor Fahrenheit to Celsius conversion 
+    {
+    	System.out.print("Enter Temperature in Fahrenheit: ");
+        double fahrenheit = scan.nextDouble();
+        double celsius = (fahrenheit - 32) * 5.0 / 9.0; 
+        System.out.println("Temperature in Celsius: " + celsius); //display result
+    }
+    else if (choice == 2 ) //Process for Celsius to Fahrenheit conversion
+    {
+    	System.out.print("Enter Temperature in Celsius: ");
+        double celsius = scan.nextDouble();
+        double fahrenheit = (celsius * 9.0 / 5.0) + 32;
+        System.out.println("Temperature in Fahrenheit: " + fahrenheit);
+    }
+    else //display message for invalid input 
+    {
+        System.out.println("Option does not exist. Try again.");
+    }
+
+
+		}
+	}
+	
